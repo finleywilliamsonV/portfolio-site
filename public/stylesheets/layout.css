@@ -6,6 +6,14 @@
   /* border: 1px red solid; */
 }
 
+.border {
+  border: 1px red solid;
+}
+
+a {
+  cursor: pointer;
+}
+
 /* COLORS */
 
 body {
@@ -62,6 +70,8 @@ body {
     width: 100%;
     height: 40px;
     background-color: transparent;
+    border-radius:14px;
+    max-width: 330px;
   }
 
   #name-button {
@@ -85,7 +95,7 @@ body {
     margin: 0 auto;
   }
 
-  .github-col {
+  #github-col {
     margin-right: 20px;
   }
 
@@ -93,25 +103,68 @@ body {
 
 @media (min-width: 576px) {
   body {
-    background-color: darkred !important;
+    /* background-color: darkred !important; */
+  }
+
+  .navbar-btn {
+    max-width: 500px;
   }
 
 }
 
 @media (min-width: 768px) {
   body {
-    background-color: darkcyan !important;
+    /* background-color: darkcyan !important; */
+  }
+
+  #navbar {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  #github-col {
+    margin-right: 0px;
+  }
+
+  email-link {
+    margin: 0;
+  }
+
+
+  #name-col * {
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  #portfolio-col *,
+  #about-me-col *,
+  #github-col *,
+  #email-col * {
+    text-align: center;
+  }
+
+  #portfolio-col,
+  #about-me-col { 
+    max-width: 130px;
+  }
+
+  #github-col,
+  #email-col {
+    max-width: 65px;
   }
 }
 
 @media (min-width: 992px) {
   body {
-    background-color: darkgoldenrod !important;
+    /* background-color: darkgoldenrod !important; */
   }
 }
 
 @media (min-width: 1200px) {
   body {
-    background-color: darkolivegreen !important;
+    /* background-color: darkolivegreen !important; */
+  }
+
+  #navbar-container {
   }
 }

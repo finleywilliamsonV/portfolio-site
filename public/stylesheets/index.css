@@ -16,6 +16,8 @@
 
   margin-top: 50px;
   letter-spacing: 2px;
+  /* height: 40px; */
+  width: 100%;
 }
 
 #title-button:hover {
@@ -23,10 +25,8 @@
   color: #1e2024;
 }
 
-#title-container,
-#title-cards,
-.title-card {
-  /* border: 1px red solid; */
+#title-container {
+  margin-top: 50px;
 }
 
 #title-row {
@@ -46,34 +46,35 @@
     width: 330px;
   }
 
-  #button-card {
-    text-align: center;
+  #back-slash {
+    font-size: 30px;
   }
 
-  #title-button {
-    width:80%;
-  }
 }
 
 @media (min-width: 576px) {
-  body {
-    background-color: darkred !important;
-  }
   #title-text * {
     font-size: 54px;
+    line-height: 44px;
   }
   .title-card {
     width: 500px;
   }
+
+  #back-slash {
+    font-size: 38px;
+  }
 }
 
 @media (min-width: 768px) {
-  body {
-    background-color: darkcyan !important;
+  #title-container {
+    margin-top: 100px;
   }
+
   #title-text * {
     font-size: 65px;
-    line-height: 65px;
+    line-height: 55px;
+    letter-spacing: -2px;
   }
   #back-slash {
     font-size: 50px;
@@ -81,16 +82,14 @@
   .title-card {
     width: 600px;
   }
+
+  #title-button {
+    width:auto;
+  }
 }
 
 @media (min-width: 992px) {
-  body {
-    background-color: darkgoldenrod !important;
-  }
 }
 
 @media (min-width: 1200px) {
-  body {
-    background-color: darkolivegreen !important;
-  }
 }
