@@ -1,0 +1,16 @@
+/* PROJECTS PAGE */
+
+#projects-container {
+  margin: 120px auto;
+}
+
+#title-col {
+  padding: 0;
+  margin: 0 26px;
+}
+
+#projects-title {
+  font-size: 39px;
+  font-weight: 700px;
+  margin: 0;
+}

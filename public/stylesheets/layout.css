@@ -1,0 +1,117 @@
+* {
+  color: #fff;
+  font-family: "orator-std";
+  font-size: 12px;
+  font-weight: 400;
+  /* border: 1px red solid; */
+}
+
+/* COLORS */
+
+body {
+  background-color: #1e2024;
+}
+
+.pink {
+  color: #e72e8f;
+}
+
+.green {
+  color: #5bb947;
+}
+
+.yellow {
+  color: #f3eb3e;
+}
+
+/* NEGATING DEFAULT STYLES */
+
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 0) {
+
+  #navbar * {
+    text-align: center;
+  }
+
+  #navbar [class ^= 'col'] {
+    width: 100%;
+  }
+
+  [class ^= 'col'] {
+    padding: 0;
+    margin: 5px 0;
+  }
+
+  [class ^= 'col'] button {
+    font-size: 18px;
+  }
+
+  .navbar-link {
+    font-size: 18px;
+  }
+
+  .navbar-btn {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+  }
+
+  #name-button {
+    margin-top: 10px;
+  }
+
+  #portfolio-button {
+    border: 2px solid #5bb947;
+  }
+
+  #about-me-button {
+    border: 2px solid #e72e8f;
+  }
+
+  i {
+    font-size: 30px;
+  }
+
+  #navbar {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .github-col {
+    margin-right: 20px;
+  }
+
+}
+
+@media (min-width: 576px) {
+  body {
+    background-color: darkred !important;
+  }
+
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: darkcyan !important;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background-color: darkgoldenrod !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-color: darkolivegreen !important;
+  }
+}
