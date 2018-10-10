@@ -1,0 +1,52 @@
+extends layout
+
+block content
+
+  .container-fluid.content-container#projects-container
+
+    .row#projects-title-row
+      .col#projects-title-col
+        h1#projects-title projects
+
+    .row#selector-row
+      .col
+        button.selector-btn#select-all-btn all
+        button.selector-btn#select-node-btn node.js
+        button.selector-btn#select-react-btn react
+        button.selector-btn#select-as3-btn actionscript 3
+
+    .row.mx-auto#projects-row
+      .col-12.col-md-6.col-lg-4.card-col
+        .mobile-title.d-md-none Lorem Ipsum Generator
+        .card.project-card.mx-auto.project-card
+          img.img-fluid(src="img/LoremIpsum3x2.png", alt="")
+          .overlay
+            .overlay-text Lorem Ipsum Generator
+
+      .col-12.col-md-6.col-lg-4.card-col
+        .mobile-title.d-md-none ToDo List
+        .card.project-card.mx-auto.project-card
+          img.img-fluid(src="img/ToDoList3x2.png", alt="")
+          .overlay
+            .overlay-text ToDo List
+
+      .col-12.col-md-6.col-lg-4.card-col
+        .mobile-title.d-md-none Kanban
+        .card.project-card.mx-auto.project-card
+          img.img-fluid(src="img/placeholder3x2.png", alt="")
+          .overlay
+            .overlay-text Kanban
+
+      .col-12.col-md-6.col-lg-4.card-col
+        .mobile-title.d-md-none Emojis in Space
+        .card.project-card.mx-auto.project-card
+          img.img-fluid(src="img/EmojisInSpace3x2.png", alt="")
+          .overlay
+            .overlay-text Emojis in Space
+
+      .col-12.col-md-6.col-lg-4.card-col
+        .mobile-title.d-md-none Dungeon Masters
+        .card.project-card.mx-auto.project-card
+          img.img-fluid(src="img/DungeonMasters3x2.png", alt="")
+          .overlay
+            .overlay-text Dungeon Masters

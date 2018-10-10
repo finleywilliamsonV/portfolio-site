@@ -1,16 +1,143 @@
 /* PROJECTS PAGE */
 
-#projects-container {
-  margin: 120px auto;
+* {
+  /* border: 1px red solid; */
 }
 
-#title-col {
-  padding: 0;
-  margin: 0 26px;
+#projects-row {
+  margin-top: 10px;
 }
 
-#projects-title {
-  font-size: 39px;
-  font-weight: 700px;
-  margin: 0;
+.card {
+  background-color: transparent;
+  border: none;
+}
+
+img {
+  border-radius:14px;
+}
+
+.card-col {
+  /* max-width: 600px; */
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 0) {
+  
+  #projects-title-col {
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  #projects-title {
+    font-size: 39px;
+    font-weight: 700px;
+    margin: 0;
+  }
+
+  #selector-row {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+
+  .selector-btn {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  #projects-row [class^="col"] {
+    margin: 0;
+    padding-right: 30px;
+    padding-top: 30px;
+  }
+
+}
+
+@media (min-width: 576px) {
+  
+}
+
+@media (min-width: 768px) {
+  #projects-container {
+    margin: 40px auto 10px;
+  }
+  
+  #projects-title-col {
+    padding: 0;
+    margin-top: 40px;
+  }
+  
+  #projects-title {
+    font-size: 50px;
+    font-weight: 750px;
+    letter-spacing: -2px;
+    margin: 0;
+  }
+
+  #selector-row {
+    margin-left: 0px;
+    margin-top: 15px;
+  } 
+
+  #projects-row [class^="col"] {
+    margin: 0;
+    padding-right: 35px;
+    padding-top: 35px;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+
+/* BUTTON COLORS */
+
+.selector-btn {
+  padding: 0 15px;
+  border-radius:14px;
+  transition: 0.25s;
+}
+
+#select-all-btn {
+  border: 2px solid #4d84c4;
+  background-color: transparent;
+}
+#select-all-btn:hover,
+#select-all-btn.active {
+  background-color: #4d84c4;
+  color: #000;
+}
+
+#select-node-btn {
+  border: 2px solid #5bb947;
+  background-color: transparent;
+}
+#select-node-btn:hover,
+#select-node-btn.active {
+  background-color: #5bb947;
+  color: #000;
+}
+
+#select-react-btn {
+  border: 2px solid #e72e8f;
+  background-color: transparent;
+}
+#select-react-btn:hover,
+#select-react-btn.active {
+  background-color: #e72e8f;
+  color: #000;
+}
+
+#select-as3-btn {
+  border: 2px solid #f3eb3e;
+  background-color: transparent;
+}
+#select-as3-btn:hover,
+#select-as3-btn.active {
+  background-color: #f3eb3e;
+  color: #000;
 }

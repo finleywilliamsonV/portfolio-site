@@ -1,0 +1,110 @@
+* {
+  /* border: 1px red solid; */
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.content-container {
+  margin: 20px auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#about-me-email-link {
+  text-decoration: none;
+  color: #fff;
+  transition: .25s;
+}
+#about-me-email-link:hover {
+  color: #4d84c4;
+}
+
+#languages-list {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-title {
+  margin-bottom: 5px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 0) {
+  
+  #about-me-title {
+    font-size: 39px;
+    font-weight: 700px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #about-me-text {
+    margin-top: 10px;
+    line-height: 20px;
+    max-width: 520px;
+  }
+  
+  #languages-list {
+    margin-top: 40px;
+  }
+
+  #contact-text {
+    margin-top: 60px;
+  }
+
+  #language-list-title {
+    font-size: 18;
+  }
+
+  #contact-text * {
+    margin: 0;
+    font-size: 18;
+  }
+
+}
+
+@media (min-width: 576px) {
+  
+}
+
+@media (min-width: 768px) {
+  
+  #about-me-title {
+    font-size: 50px;
+    font-weight: 700px;
+    letter-spacing: -2px;
+  }
+
+  #about-me-title {
+    margin-top: 40px;
+  }
+  
+  #languages-list {
+    margin-top: 40px;
+  }
+
+  #contact-text {
+    margin-top: 60px;
+  }
+
+  #about-me-text {
+    margin-top: 30px;
+    line-height: 20px;
+    max-width: 520px;
+  }
+
+  #contact-text * {
+    margin: 0;
+    /* font-size: 22; */
+  }
+  
+  
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}

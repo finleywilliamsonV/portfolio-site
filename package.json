@@ -8,7 +8,7 @@
   "private": false,
   "scripts": {
     "start": "node app.js",
-    "watch": "nodemon app.js"
+    "watch": "nodemon -e pug,js,css"
   },
   "dependencies": {
     "body-parser": "^1.18.3",

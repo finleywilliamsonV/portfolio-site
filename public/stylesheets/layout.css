@@ -1,20 +1,56 @@
 * {
   color: #fff;
   font-family: "orator-std";
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   /* border: 1px red solid; */
 }
 
 .border {
-  border: 1px red solid;
+  border: 1px red solid !important; 
 }
 
-a {
+a, i {
   cursor: pointer;
+  transition: .25s;
 }
+
 
 /* COLORS */
+
+#name-btn:hover {
+  background-color: #4d84c4;
+  color: #000;
+}
+#name-link:hover {
+  color: #4d84c4
+}
+
+#portfolio-link:hover {
+  color: #f3eb3e;
+}
+
+#portfolio-btn:hover {
+  background-color: #f3eb3e;
+  color: #000;
+}
+
+#about-me-link:hover {
+  color: #e72e8f;
+}
+
+#about-me-btn:hover {
+  background-color: #e72e8f;
+  color: #000;
+}
+
+#github-link:hover,
+#github-btn:hover,
+#email-link:hover,
+#email-btn:hover {
+  color: #5bb947;
+}
+
 
 body {
   background-color: #1e2024;
@@ -32,6 +68,10 @@ body {
   color: #f3eb3e;
 }
 
+.blue {
+  color: #4d84c4;
+}
+
 /* NEGATING DEFAULT STYLES */
 
 .btn:focus,.btn:active:focus,.btn.active:focus,
@@ -40,10 +80,33 @@ body {
     box-shadow: none !important;
 }
 
+button:focus,button:active:focus,button.active:focus,
+button.focus,button:active.focus,button.active.focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#name-link,
+#portfolio-link,
+#about-me-link,
+#name-btn {
+  text-decoration: none;
+  color: white;
+}
+
+.row {
+  margin: 0;
+}
+
 
 /* MEDIA QUERIES */
 
 @media (min-width: 0) {
+
+  #navbar-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
   #navbar * {
     text-align: center;
@@ -51,17 +114,14 @@ body {
 
   #navbar [class ^= 'col'] {
     width: 100%;
+    margin: 5px 0;
   }
 
   [class ^= 'col'] {
     padding: 0;
-    margin: 5px 0;
   }
 
-  [class ^= 'col'] button {
-    font-size: 18px;
-  }
-
+  [class ^= 'col'] button.btn,
   .navbar-link {
     font-size: 18px;
   }
@@ -72,17 +132,18 @@ body {
     background-color: transparent;
     border-radius:14px;
     max-width: 330px;
+    padding: 0;
   }
 
-  #name-button {
+  #name-btn {
     margin-top: 10px;
   }
 
-  #portfolio-button {
-    border: 2px solid #5bb947;
+  #portfolio-btn {
+    border: 2px solid #f3eb3e;
   }
 
-  #about-me-button {
+  #about-me-btn {
     border: 2px solid #e72e8f;
   }
 
@@ -98,6 +159,7 @@ body {
   #github-col {
     margin-right: 20px;
   }
+
 
 }
 
@@ -117,6 +179,11 @@ body {
     /* background-color: darkcyan !important; */
   }
 
+  #navbar-container {
+    padding-left: 40px;
+    padding-right: 25px;
+  }
+
   #navbar {
     width: 100%;
     margin-top: 20px;
@@ -133,7 +200,7 @@ body {
 
   #name-col * {
     text-align: left;
-    margin-left: 10px;
+    /* margin-left: 10px; */
   }
 
   #portfolio-col *,
@@ -143,9 +210,17 @@ body {
     text-align: center;
   }
 
-  #portfolio-col,
+  #name-col {
+    min-width: 275px;
+    max-width: 275px;
+  }
+
+  #portfolio-col { 
+    max-width: 150px;
+  }
+
   #about-me-col { 
-    max-width: 130px;
+    max-width: 140px;
   }
 
   #github-col,
@@ -156,15 +231,13 @@ body {
 
 @media (min-width: 992px) {
   body {
-    /* background-color: darkgoldenrod !important; */
+    /* background-color: darkmagenta !important; */
   }
 }
 
 @media (min-width: 1200px) {
   body {
-    /* background-color: darkolivegreen !important; */
+    /* background-color: #1e2024 !important; */
   }
 
-  #navbar-container {
-  }
 }

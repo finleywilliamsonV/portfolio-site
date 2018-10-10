@@ -6,9 +6,14 @@ router.get('/', function(req, res, next) {
   return res.render('index');
 });
 
-// GET /portfolio
-router.get('/portfolio', function(req, res, next) {
-  return res.render('portfolio');
+// GET /projects
+router.get('/projects', function(req, res, next) {
+  return res.render('projects');
+});
+
+// GET /about-me
+router.get('/about-me', function(req, res, next) {
+  return res.render('aboutMe');
 });
 
 module.exports = router;

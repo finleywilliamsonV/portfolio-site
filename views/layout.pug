@@ -11,52 +11,60 @@ head
   link(rel='stylesheet', href='/stylesheets/layout.css')
   link(rel='stylesheet', href='/stylesheets/index.css')
   link(rel='stylesheet', href='/stylesheets/projects.css')
-
+  link(rel='stylesheet', href='/stylesheets/imageOverlay.css')
+  link(rel='stylesheet', href='/stylesheets/aboutMe.css')
+  
   body
 
     .container-fluid#navbar-container
       .row#navbar
 
         //- NAME
-        .col-12.col-md#name-col
+        .col-12.col-md-3#name-col
           //- name button
-          button.btn.d-md-none.navbar-btn#name-button finley williamson v
+          a(href="/")
+            button.btn.d-md-none.navbar-btn#name-btn finley williamson v
           //- name link
-          a.navbar-link.d-none.d-md-block#name finley williamson v
+          a.navbar-link.d-none.d-md-block#name-link(href="/") finley williamson v
+
+        .col-md.d-none.d-md-block
+            
 
         //- PORTFOLIO
         .col-12.col-md-2#portfolio-col
           //- portfolio button
-          button.btn.d-md-none.navbar-btn#portfolio-button portfolio
+          a(href="/projects")
+            button.btn.d-md-none.navbar-btn#portfolio-btn portfolio
           //- portfolio link
-          a.navbar-link.d-none.d-md-block#portfolio-link portfolio
+          a.navbar-link.d-none.d-md-block#portfolio-link(href="/projects") portfolio
         
         //- ABOUT ME
         .col-12.col-md-2#about-me-col
           //- about me button
-          button.btn.d-md-none.navbar-btn#about-me-button about me
+          a(href="/about-me")
+            button.btn.d-md-none.navbar-btn#about-me-btn about me
           //- about me link
-          a.navbar-link.d-none.d-md-block#about-me-link about me
+          a.navbar-link.d-none.d-md-block#about-me-link(href="/about-me") about me
 
         //- GITHUB
         .col.col-md-1#github-col
           //- github button
           a(href="https://github.com/finleywilliamsonV", target="_blank")
-            button.btn.d-md-none.navbar-btn#github-button
-              i.fab.fa-github
+            button.btn.d-md-none.navbar-btn
+              i.fab.fa-github#github-btn
           //- github link with hover
-          a.d-none.d-md-block#github-link(href="https://github.com/finleywilliamsonV", target="_blank")
-            i.fab.fa-github
+          a.d-none.d-md-block(href="https://github.com/finleywilliamsonV", target="_blank")
+            i.fab.fa-github#github-link
         
         //- EMAIL
         .col.col-md#email-col
           //- email button
           a(href="mailto:finley.williamson@gmail.com")
-            button.btn.d-md-none.p-0.navbar-btn#email-button
-              i.far.fa-envelope
+            button.btn.d-md-none.p-0.navbar-btn
+              i.far.fa-envelope#email-btn
           //- email link with hover
-          a.d-none.d-md-block#email-link
-            i.far.fa-envelope
+          a.d-none.d-md-block(href="mailto:finley.williamson@gmail.com")
+            i.far.fa-envelope#email-link
 
   // content block
   block content
@@ -64,3 +72,5 @@ head
   script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
   script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
   script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous")
+  script(src='/js/selectorClickHandler.js')
+  script(src='{process.env.BROWSER_REFRESH_URL}')

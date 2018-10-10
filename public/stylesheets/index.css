@@ -1,26 +1,26 @@
-* {
-  /* border: 1px red solid; */
+
+#title-container {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .title-card {
   margin: 0 auto;
 }
 
-#title-button {
+#title-btn {
   background-color:transparent;
   border-radius:14px;
-  font-size: 18px !important;
+  font-size: 18px;
 	border:2px solid #f3eb3e;
   cursor:pointer;
-  padding: 16px 48px;
-
-  margin-top: 50px;
+  padding: 20px 36px;
+  margin-top: 40px;
   letter-spacing: 2px;
-  /* height: 40px; */
   width: 100%;
 }
 
-#title-button:hover {
+#title-btn:hover {
   background-color:#f3eb3e;
   color: #1e2024;
 }
@@ -38,12 +38,12 @@
 
 @media (min-width: 0) {
   #title-text * {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 36px;
   }
 
   .title-card {
-    width: 330px;
+    width: 270px;
   }
 
   #back-slash {
@@ -68,22 +68,24 @@
 
 @media (min-width: 768px) {
   #title-container {
-    margin-top: 100px;
+    margin-top: 175px;
   }
 
   #title-text * {
     font-size: 65px;
-    line-height: 55px;
+    line-height: 65px;
     letter-spacing: -2px;
   }
+
   #back-slash {
     font-size: 50px;
   }
+  
   .title-card {
     width: 600px;
   }
 
-  #title-button {
+  #title-btn {
     width:auto;
   }
 }
@@ -92,4 +94,19 @@
 }
 
 @media (min-width: 1200px) {
+  #title-text * {
+    font-size: 75px;
+  }
+
+  #back-slash {
+    font-size: 55px;
+  }
+  
+  .title-card {
+    width: 650px;
+  }
+
+  #title-btn {
+    font-size: 22px;
+  }
 }
