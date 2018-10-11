@@ -19,34 +19,52 @@ block content
       .col-12.col-md-6.col-lg-4.card-col
         .mobile-title.d-md-none Lorem Ipsum Generator
         .card.project-card.mx-auto.project-card
-          img.img-fluid(src="img/LoremIpsum3x2.png", alt="")
-          .overlay
+          img.img-fluid.project-image(src="img/LoremIpsum3x2.png", alt="")#image-lorem
+          .overlay#overlay-lorem
             .overlay-text Lorem Ipsum Generator
 
       .col-12.col-md-6.col-lg-4.card-col
         .mobile-title.d-md-none ToDo List
         .card.project-card.mx-auto.project-card
-          img.img-fluid(src="img/ToDoList3x2.png", alt="")
-          .overlay
+          img.img-fluid.project-image(src="img/ToDoList3x2.png", alt="")#image-todo
+          .overlay#overlay-todo
             .overlay-text ToDo List
 
       .col-12.col-md-6.col-lg-4.card-col
         .mobile-title.d-md-none Kanban
         .card.project-card.mx-auto.project-card
-          img.img-fluid(src="img/placeholder3x2.png", alt="")
-          .overlay
+          img.img-fluid.project-image(src="img/placeholder3x2.png", alt="")#image-kanban
+          .overlay#overlay-kanban
             .overlay-text Kanban
 
       .col-12.col-md-6.col-lg-4.card-col
         .mobile-title.d-md-none Emojis in Space
         .card.project-card.mx-auto.project-card
-          img.img-fluid(src="img/EmojisInSpace3x2.png", alt="")
-          .overlay
+          img.img-fluid.project-image(src="img/EmojisInSpace3x2.png", alt="")#image-emoji
+          .overlay#overlay-emoji
             .overlay-text Emojis in Space
 
       .col-12.col-md-6.col-lg-4.card-col
         .mobile-title.d-md-none Dungeon Masters
         .card.project-card.mx-auto.project-card
-          img.img-fluid(src="img/DungeonMasters3x2.png", alt="")
-          .overlay
+          img.img-fluid.project-image(src="img/DungeonMasters3x2.png", alt="")#image-dungeon
+          .overlay#overlay-dungeon
             .overlay-text Dungeon Masters
+
+      //- Modal
+      #project-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+          .modal-content
+            .modal-header
+              //- h5#exampleModalLongTitle.modal-title Modal title
+              button.close(type='button', data-dismiss='modal', aria-label='Close')
+                span(aria-hidden='true') ×
+            .modal-body
+              #project-carousel.carousel.slide(data-ride='carousel', data-interval='false')
+                //- add .carousel-inner here
+                  //- add slides here
+                //- add controls here
+            .modal-footer
+              button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+              button.btn.btn-primary(type='button') Save changes
+
