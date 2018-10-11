@@ -102,42 +102,42 @@ img {
   transition: 0.25s;
 }
 
-#select-all-btn {
+/* #select-all {
   border: 2px solid #4d84c4;
   background-color: transparent;
 }
-#select-all-btn:hover,
-#select-all-btn.active {
+#select-all:hover,
+#select-all.active {
   background-color: #4d84c4;
   color: #000;
-}
+} */
 
-#select-node-btn {
+#select-node {
   border: 2px solid #5bb947;
   background-color: transparent;
 }
-#select-node-btn:hover,
-#select-node-btn.active {
+#select-node:hover,
+#select-node.active {
   background-color: #5bb947;
   color: #000;
 }
 
-#select-react-btn {
+#select-react {
   border: 2px solid #e72e8f;
   background-color: transparent;
 }
-#select-react-btn:hover,
-#select-react-btn.active {
+#select-react:hover,
+#select-react.active {
   background-color: #e72e8f;
   color: #000;
 }
 
-#select-as3-btn {
+#select-as3 {
   border: 2px solid #f3eb3e;
   background-color: transparent;
 }
-#select-as3-btn:hover,
-#select-as3-btn.active {
+#select-as3:hover,
+#select-as3.active {
   background-color: #f3eb3e;
   color: #000;
 }

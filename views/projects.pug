@@ -10,41 +10,41 @@ block content
 
     .row#selector-row
       .col
-        button.selector-btn#select-all-btn all
-        button.selector-btn#select-node-btn node.js
-        button.selector-btn#select-react-btn react
-        button.selector-btn#select-as3-btn actionscript 3
+        button.selector-btn#select-node node.js
+        button.selector-btn#select-react react
+        button.selector-btn#select-as3 actionscript 3
 
     .row.mx-auto#projects-row
-      .col-12.col-md-6.col-lg-4.card-col
+    
+      .col-12.col-md-6.col-lg-4.card-col#col-lorem
         .mobile-title.d-md-none Lorem Ipsum Generator
         .card.project-card.mx-auto.project-card
           img.img-fluid.project-image(src="img/LoremIpsum3x2.png", alt="")#image-lorem
           .overlay#overlay-lorem
             .overlay-text Lorem Ipsum Generator
 
-      .col-12.col-md-6.col-lg-4.card-col
+      .col-12.col-md-6.col-lg-4.card-col#col-todo
         .mobile-title.d-md-none ToDo List
         .card.project-card.mx-auto.project-card
           img.img-fluid.project-image(src="img/ToDoList3x2.png", alt="")#image-todo
           .overlay#overlay-todo
             .overlay-text ToDo List
 
-      .col-12.col-md-6.col-lg-4.card-col
+      .col-12.col-md-6.col-lg-4.card-col#col-kanban
         .mobile-title.d-md-none Kanban
         .card.project-card.mx-auto.project-card
           img.img-fluid.project-image(src="img/placeholder3x2.png", alt="")#image-kanban
           .overlay#overlay-kanban
             .overlay-text Kanban
 
-      .col-12.col-md-6.col-lg-4.card-col
+      .col-12.col-md-6.col-lg-4.card-col#col-emoji
         .mobile-title.d-md-none Emojis in Space
         .card.project-card.mx-auto.project-card
           img.img-fluid.project-image(src="img/EmojisInSpace3x2.png", alt="")#image-emoji
           .overlay#overlay-emoji
             .overlay-text Emojis in Space
 
-      .col-12.col-md-6.col-lg-4.card-col
+      .col-12.col-md-6.col-lg-4.card-col#col-dungeon
         .mobile-title.d-md-none Dungeon Masters
         .card.project-card.mx-auto.project-card
           img.img-fluid.project-image(src="img/DungeonMasters3x2.png", alt="")#image-dungeon
@@ -65,6 +65,5 @@ block content
                   //- add slides here
                 //- add controls here
             .modal-footer
-              button.btn.btn-secondary(type='button', data-dismiss='modal') Close
               button.btn.btn-primary(type='button') Save changes
 

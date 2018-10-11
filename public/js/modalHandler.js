@@ -5,7 +5,7 @@ const modal = $('#project-modal').modal({show: false});
 let modalImages;
 
 // image object of all image arrays
-const images = {
+const projectImages = {
   loremImages: ['../img/LoremIpsum3x2.png'],
   todoImages: ['../img/ToDoList3x2.png'],
   kanbanImages: ['../img/placeholder3x2.png'],
@@ -27,13 +27,12 @@ $('.overlay').click((e)=> {
   } else {
     imageName = target.id.substring(8);
   }
-  console.log('image name:', imageName);
 
   // 3. show modal
   $('#project-modal').modal('show');
 
   // 4. set modal images to respective array
-  modalImages = images[imageName + 'Images'];
+  modalImages = projectImages[imageName + 'Images'];
 
   // 5. store parent carousel div and create carousel inner
   const $carouselDiv = document.getElementById('project-carousel');
