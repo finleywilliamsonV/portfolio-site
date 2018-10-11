@@ -1,3 +1,27 @@
 .modal * {
   color: black;
+  /* border: red 1px solid; */
+}
+
+.modal-dialog {
+  max-width: 90% !important;
+}
+
+#info-col {
+  padding-right: 0;
+  padding-top: 0;
+}
+
+#modal-text p {
+  line-height: 18px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.modal-body [class^='col'] {
+  margin-left: 20px;
+}
+
+#spacer-col-modal {
+  height: 20px;
 }

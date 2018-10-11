@@ -40,13 +40,8 @@ img {
     margin-left: 0px;
     margin-top: 15px;
   }
-
-  .selector-btn {
-    margin-right: 5px;
-    margin-bottom: 5px;
-  }
-
-  #projects-row [class^="col"] {
+  
+  #projects-row .card-col {
     margin: 0;
     padding-right: 30px;
     padding-top: 30px;
@@ -80,7 +75,7 @@ img {
     margin-top: 15px;
   } 
 
-  #projects-row [class^="col"] {
+  #projects-row .card-col {
     margin: 0;
     padding-right: 35px;
     padding-top: 35px;
@@ -96,7 +91,10 @@ img {
 
 /* BUTTON COLORS */
 
-.selector-btn {
+.selector-btn,
+.modal-display-btn {
+  margin-right: 5px;
+  margin-bottom: 5px;
   padding: 0 15px;
   border-radius:14px;
   transition: 0.25s;
@@ -112,32 +110,35 @@ img {
   color: #000;
 } */
 
-#select-node {
+.select-node-btn,
+.select-node-modal {
   border: 2px solid #5bb947;
   background-color: transparent;
 }
-#select-node:hover,
-#select-node.active {
+.select-node-btn:hover,
+.select-node-btn.active {
   background-color: #5bb947;
   color: #000;
 }
 
-#select-react {
+.select-react-btn,
+.select-react-modal {
   border: 2px solid #e72e8f;
   background-color: transparent;
 }
-#select-react:hover,
-#select-react.active {
+.select-react-btn:hover,
+.select-react-btn.active {
   background-color: #e72e8f;
   color: #000;
 }
 
-#select-as3 {
+.select-as3-btn,
+.select-as3-modal {
   border: 2px solid #f3eb3e;
   background-color: transparent;
 }
-#select-as3:hover,
-#select-as3.active {
+.select-as3-btn:hover,
+.select-as3-btn.active {
   background-color: #f3eb3e;
   color: #000;
 }
