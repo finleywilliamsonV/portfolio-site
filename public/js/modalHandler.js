@@ -4,35 +4,60 @@ const modal = $('#project-modal').modal({show: false});
 // var for referencing image arrays
 let modalImages;
 
-// image object of all image arrays
-const projectImages = {
-  loremImages: ['../img/LoremIpsum3x2.png'],
-  todoImages: ['../img/ToDoList3x2.png'],
-  kanbanImages: ['../img/placeholder3x2.png'],
-  emojiImages: ['../img/EmojisInSpace3x2.png', '../img/EmojisInSpace3x2.png'],
-  dungeonImages: ['../img/DungeonMasters3x2.png'],
+// object containing text files and tags for projects
+const projectData = {
+  lorem: {
+    title: 'Lorem Ipsum Generator',
+    tags: ['node', 'express', 'mongoDB'],
+    description: 'Generate Lorem Ipsum text in a variety of styles. This site uses Express for routing, MongoDB for data used in generation, pug for a views engine, and Bootstrap for styling.',
+    images: ['../img/LoremIpsum3x2.png'],
+  },
+  todo: {
+    title: 'ToDo List',
+    tags: ['node'],
+    description: 'A simple to-do list. I use vanilla JS for routing and views handling, store & retrieve user list data in local storage, and use Bootstrap for styling.',
+    images: ['../img/ToDoList3x2.png'],
+  },
+  kanban: {
+    title: 'Kanban',
+    tags: ['node', 'react'],
+    description: 'FUKKKKKKKKKKKKK',
+    images: ['../img/placeholder3x2.png'],
+  },
+  emoji: {
+    title: 'Emojis in Space',
+    tags: ['as3'],
+    description: 'A retro-themed, top-down shooter pitting Clyde Panther against a raucous horde of emojis. My first commercial game! Download free on ios and Google Play.',
+    images: ['../img/EmojisInSpace3x2.png', '../img/EmojisInSpace3x2.png'],
+  },
+  dungeon: {
+    title: 'Dungeon Masters (in progress)',
+    tags: ['as3'],
+    description: 'Build your own dungeon, fill it with monsters, and defend against endless waves of adventurers. Implements a D&D style combat system.',
+    images: ['../img/DungeonMasters3x2.png'],
+  },
 };
 
-// onclick
+// onclick, create the modal
 $('.overlay').click((e)=> {
   // 1. store target
   let target = e.target;
-  let imageName;
+  let projectName;
 
   // 2. store which image was clicked
   if (target.classList.contains('overlay-text')) {
-    imageName = target.parentNode.id.substring(8);
+    projectName = target.parentNode.id.substring(8);
   } else if (target.classList.contains('project-image')) {
-    imageName = target.id.substring(6);
+    projectName = target.id.substring(6);
   } else {
-    imageName = target.id.substring(8);
+    projectName = target.id.substring(8);
   }
 
   // 3. show modal
   $('#project-modal').modal('show');
 
   // 4. set modal images to respective array
-  modalImages = projectImages[imageName + 'Images'];
+  modalImages = projectData[projectName].images;
 
   // 5. store parent carousel div and create carousel inner
   const $carouselDiv = document.getElementById('project-carousel');
@@ -114,5 +139,29 @@ $('.overlay').click((e)=> {
     $nextButton.appendChild($nextSR);
     $carouselDiv.appendChild($nextButton);
   }
+
+  // 8. fill modal with project data
+  // 8.1 add title
+  document.getElementById('modal-title').innerText = projectData[projectName].title;
+  
+  // 8.2 add tag buttons
+  const modalTags = document.getElementById('modal-tags');
+  modalTags.innerHTML = '';
+
+  projectData[projectName].tags.forEach((tag) => {
+    const button = document.createElement('button');
+    button.className = `modal-display-btn select-${tag}-modal`;
+    if (tag === 'node') {
+      button.innerText = 'node.js';
+    } else if (tag === 'as3') {
+      button.innerText = 'actionscript 3';
+    } else {
+      button.innerText = tag;
+    }
+    modalTags.appendChild(button);
+  });
+  
+  // 8.3 add description
+  document.getElementById('modal-description').innerText = projectData[projectName].description;
 });
 

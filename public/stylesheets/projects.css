@@ -100,45 +100,52 @@ img {
   transition: 0.25s;
 }
 
-/* #select-all {
-  border: 2px solid #4d84c4;
-  background-color: transparent;
-}
-#select-all:hover,
-#select-all.active {
-  background-color: #4d84c4;
-  color: #000;
-} */
+
 
 .select-node-btn,
-.select-node-modal {
+.select-as3-btn {
   border: 2px solid #5bb947;
   background-color: transparent;
 }
 .select-node-btn:hover,
-.select-node-btn.active {
+.select-node-btn.active,
+.select-node-modal,
+.select-as3-btn:hover,
+.select-as3-btn.active,
+.select-as3-modal {
   background-color: #5bb947;
   color: #000;
 }
 
-.select-react-btn,
-.select-react-modal {
+.select-express-btn {
+  border: 2px solid #4d84c4;
+  background-color: transparent;
+}
+.select-express-btn:hover,
+.select-express-btn.active,
+.select-express-modal {
+  background-color: #4d84c4;
+  color: #000;
+}
+
+.select-mongoDB-btn {
   border: 2px solid #e72e8f;
   background-color: transparent;
 }
-.select-react-btn:hover,
-.select-react-btn.active {
+.select-mongoDB-btn:hover,
+.select-mongoDB-btn.active,
+.select-mongoDB-modal {
   background-color: #e72e8f;
   color: #000;
 }
 
-.select-as3-btn,
-.select-as3-modal {
+.select-react-btn {
   border: 2px solid #f3eb3e;
   background-color: transparent;
 }
-.select-as3-btn:hover,
-.select-as3-btn.active {
+.select-react-btn:hover,
+.select-react-btn.active,
+.select-react-modal {
   background-color: #f3eb3e;
   color: #000;
 }

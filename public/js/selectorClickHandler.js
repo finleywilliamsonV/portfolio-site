@@ -1,9 +1,6 @@
-const $selectors = document.querySelectorAll('.selector-btn');
-console.log('selectors:', $selectors);
-
-const projectData = {
+const tagData = {
   lorem: {
-    tags: ['node'],
+    tags: ['node', 'express', 'mongoDB'],
   },
   todo: {
     tags: ['node'],
@@ -19,18 +16,22 @@ const projectData = {
   },
 };
 
+const $selectors = document.querySelectorAll('.selector-btn');
+
 $selectors.forEach((selector) => {
   selector.addEventListener('click', (e) => {
     const target = e.target;
-    console.log('selector target:', target);
-    const tag = target.id.substring(7);
-    console.log('selector tag:', tag);
+    // console.log('selector target:', target);
+    // const tag = target.id.substring(7);
+    // console.log('selector tag:', tag);
 
     if (target.classList.contains('active')) {
       target.classList.remove('active');
     } else {
       target.classList.add('active');
     }
+
+    // console.log(target.style);
 
     updateProjectDisplay();
   });
@@ -40,14 +41,13 @@ $selectors.forEach((selector) => {
  * Update which projects are showing
  */
 function updateProjectDisplay() {
-  console.log('\n\n ~ START UPDATE PROJECT DISPLAY ~ \n\n');
+  // console.log('\n\n ~ START UPDATE PROJECT DISPLAY ~ \n\n');
 
   // store selected buttons
   const $selectedButtons = document.querySelectorAll('.selector-btn.active');
 
   // loop over each project
-  Object.keys(projectData).forEach( (key) => {
-
+  Object.keys(tagData).forEach( (key) => {
     // store column corresponding to project key
     $currentProjectColumn = document.getElementById('col-' + key);
 
@@ -65,7 +65,7 @@ function updateProjectDisplay() {
       const tag = selected.id.substring(7);
 
       // check project data for selected key
-      if (projectData[key].tags.indexOf(tag) >= 0) {
+      if (tagData[key].tags.indexOf(tag) >= 0) {
         shouldDisplay = true;
       }
     });

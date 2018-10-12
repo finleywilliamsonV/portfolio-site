@@ -12,10 +12,16 @@
   padding-top: 0;
 }
 
-#modal-text p {
+.modal-display-btn {
+  border: 0;
+}
+
+#modal-description {
+  font-size: 20px;
   line-height: 18px;
+  letter-spacing: -2px;
   margin-top: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 40px;
 }
 
 .modal-body [class^='col'] {
@@ -24,4 +30,8 @@
 
 #spacer-col-modal {
   height: 20px;
+}
+
+.modal-body {
+  margin-bottom: 49px;
 }
