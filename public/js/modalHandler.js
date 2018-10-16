@@ -11,30 +11,45 @@ const projectData = {
     tags: ['node', 'express', 'mongoDB'],
     description: 'Generate Lorem Ipsum text in a variety of styles. This site uses Express for routing, MongoDB for data used in generation, pug for a views engine, and Bootstrap for styling.',
     images: ['../img/LoremIpsum3x2.png'],
+    linkText: 'Live Site',
+    link: '/lorem',
+    githubLink: 'https://github.com/finleywilliamsonV/lorem-express',
   },
   todo: {
     title: 'ToDo List',
     tags: ['node'],
     description: 'A simple to-do list. I use vanilla JS for routing and views handling, store & retrieve user list data in local storage, and use Bootstrap for styling.',
     images: ['../img/ToDoList3x2.png'],
+    linkText: 'Live Site',
+    link: '/todo',
+    githubLink: 'https://github.com/finleywilliamsonV/To-Do-VanillaJS',
   },
   kanban: {
     title: 'Kanban',
     tags: ['node', 'react'],
-    description: 'FUKKKKKKKKKKKKK',
+    description: 'Organize your tasks with kanban.',
     images: ['../img/placeholder3x2.png'],
+    linkText: 'Coming Soon',
+    link: '',
+    githubLink: 'https://github.com/verydanny/kanban',
   },
   emoji: {
     title: 'Emojis in Space',
     tags: ['as3'],
     description: 'A retro-themed, top-down shooter pitting Clyde Panther against a raucous horde of emojis. My first commercial game! Download free on ios and Google Play.',
     images: ['../img/EmojisInSpace3x2.png', '../img/EmojisInSpace3x2.png'],
+    linkText: 'Visit Site',
+    link: 'http://emojisin.space',
+    githubLink: 'https://github.com/finleywilliamsonV/EmojisInSpace',
   },
   dungeon: {
     title: 'Dungeon Masters (in progress)',
     tags: ['as3'],
     description: 'Build your own dungeon, fill it with monsters, and defend against endless waves of adventurers. Implements a D&D style combat system.',
     images: ['../img/DungeonMasters3x2.png'],
+    linkText: 'Coming Soon',
+    link: '',
+    githubLink: 'https://github.com/finleywilliamsonV/DungeonMasters',
   },
 };
 
@@ -163,5 +178,24 @@ $('.overlay').click((e)=> {
   
   // 8.3 add description
   document.getElementById('modal-description').innerText = projectData[projectName].description;
+
+  // 8.4 add button
+  // 8.4.1 store button div and clear inner html
+  const buttonDiv = document.getElementById('modal-button');
+  buttonDiv.innerHTML = '';
+  // 8.4.2 create link
+  const link = document.createElement('a');
+  link.setAttribute('href', projectData[projectName].link);
+  link.setAttribute('target', '_blank');
+  buttonDiv.appendChild(link);
+  // 8.4.3 create link button
+  const linkButton = document.createElement('button');
+  linkButton.className = 'btn btn-primary';
+  linkButton.setAttribute('type', 'button');
+  linkButton.innerHTML = projectData[projectName].linkText;
+  if (projectData[projectName].linkText === 'Coming Soon') {
+    linkButton.setAttribute('disabled', true);
+  }
+  link.appendChild(linkButton);
 });
 
