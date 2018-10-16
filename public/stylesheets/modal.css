@@ -47,7 +47,7 @@
     padding: 0;
   }
 
-  .carousel-inner {
+  #project-carousel {
     width: 300px;
   }
 
@@ -59,7 +59,7 @@
 
 @media (min-width: 576px) {
 
-  .carousel-inner {
+  #project-carousel {
     width: inherit;
   }
 }
