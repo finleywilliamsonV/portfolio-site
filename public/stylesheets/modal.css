@@ -3,6 +3,10 @@
   /* border: red 1px solid; */
 }
 
+.modal-header {
+  border: none;
+}
+
 .modal-dialog {
   max-width: 90% !important;
 }
