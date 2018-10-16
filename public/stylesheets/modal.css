@@ -35,3 +35,40 @@
 .modal-body {
   margin-bottom: 49px;
 }
+
+@media (min-width: 0) {
+
+  .modal-body,
+  #modal-body-container {
+    padding: 0;
+  }
+
+  .carousel-inner {
+    width: 300px;
+  }
+
+  #modal-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 576px) {
+
+  .carousel-inner {
+    width: inherit;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .modal-body,
+  #modal-body-container {
+    padding: 15px;
+  }
+
+}
+/*
+@media (min-width: 0) {
+
+} */
