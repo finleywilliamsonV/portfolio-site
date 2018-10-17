@@ -9,7 +9,7 @@
   opacity: 0;
   transition: .25s ease;
   background-color: #2b2d31;
-  border-radius: 14px;
+  border-radius: 12px;
 }
 
 .project-card img {

@@ -12,13 +12,13 @@
   padding-right: 40px;
 }
 
-#about-me-email-link {
+#contact-link {
   text-decoration: none;
   color: #fff;
   transition: .25s;
 }
-#about-me-email-link:hover {
-  color: #4d84c4;
+#contact-link:hover {
+  color: #00c0f3;
 }
 
 #languages-list {
@@ -27,7 +27,7 @@
 }
 
 .mobile-title {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 /* MEDIA QUERIES */
@@ -35,32 +35,31 @@
   
   #about-me-title {
     font-size: 39px;
-    font-weight: 700px;
+    font-weight: 700;
+    letter-spacing: 1px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
 
   #about-me-text {
     margin-top: 10px;
-    line-height: 20px;
     max-width: 520px;
   }
   
   #languages-list {
-    margin-top: 40px;
-  }
-
-  #contact-text {
     margin-top: 60px;
   }
 
-  #language-list-title {
-    font-size: 18;
+  #contact-div {
+    margin-top: 60px;
   }
 
-  #contact-text * {
-    margin: 0;
-    font-size: 18;
+  #language-list-title,
+  #contact-title,
+  #contact-link {
+    font-size: 20;
+    font-weight: 300;
+    /* letter-spacing: 1px; */
   }
 
 }
@@ -74,28 +73,22 @@
   #about-me-title {
     font-size: 50px;
     font-weight: 700px;
-    letter-spacing: -2px;
   }
 
   #about-me-title {
     margin-top: 40px;
   }
-  
-  #languages-list {
-    margin-top: 40px;
-  }
 
-  #contact-text {
+  #contact-div {
     margin-top: 60px;
   }
 
   #about-me-text {
-    margin-top: 30px;
-    line-height: 20px;
-    max-width: 520px;
+    margin-top: 16px;
+    max-width: 500px;
   }
 
-  #contact-text * {
+  #contact-div * {
     margin: 0;
     /* font-size: 22; */
   }

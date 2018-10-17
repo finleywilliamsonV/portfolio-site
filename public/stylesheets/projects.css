@@ -1,11 +1,7 @@
 /* PROJECTS PAGE */
 
-* {
-  /* border: 1px red solid; */
-}
-
 #projects-row {
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 .card {
@@ -14,7 +10,7 @@
 }
 
 img {
-  border-radius:14px;
+  border-radius: 12px;
 }
 
 .card-col {
@@ -32,8 +28,9 @@ img {
   
   #projects-title {
     font-size: 39px;
-    font-weight: 700px;
+    font-weight: 700;
     margin: 0;
+    letter-spacing: 1px;
   }
 
   #selector-row {
@@ -43,8 +40,8 @@ img {
   
   #projects-row .card-col {
     margin: 0;
-    padding-right: 30px;
-    padding-top: 30px;
+    padding-right: 20px;
+    padding-top: 20px;
   }
 
 }
@@ -66,7 +63,6 @@ img {
   #projects-title {
     font-size: 50px;
     font-weight: 750px;
-    letter-spacing: -2px;
     margin: 0;
   }
 
@@ -77,8 +73,8 @@ img {
 
   #projects-row .card-col {
     margin: 0;
-    padding-right: 35px;
-    padding-top: 35px;
+    padding-right: 25px;
+    padding-top: 25px;
   }
 }
 
@@ -91,61 +87,19 @@ img {
 
 /* BUTTON COLORS */
 
-.selector-btn,
-.modal-display-btn {
+.selector-btn {
+  font-weight: 400;
   margin-right: 5px;
   margin-bottom: 5px;
-  padding: 0 15px;
-  border-radius:14px;
+  padding: 1px 25px;
+  border-radius: 12px;
   transition: 0.25s;
-}
-
-
-
-.select-node-btn,
-.select-as3-btn {
-  border: 2px solid #5bb947;
+  border: 2px solid #00c0f3;
   background-color: transparent;
 }
-.select-node-btn:hover,
-.select-node-btn.active,
-.select-node-modal,
-.select-as3-btn:hover,
-.select-as3-btn.active,
-.select-as3-modal {
-  background-color: #5bb947;
-  color: #000;
-}
 
-.select-express-btn {
-  border: 2px solid #4d84c4;
-  background-color: transparent;
-}
-.select-express-btn:hover,
-.select-express-btn.active,
-.select-express-modal {
-  background-color: #4d84c4;
-  color: #000;
-}
-
-.select-mongoDB-btn {
-  border: 2px solid #e72e8f;
-  background-color: transparent;
-}
-.select-mongoDB-btn:hover,
-.select-mongoDB-btn.active,
-.select-mongoDB-modal {
-  background-color: #e72e8f;
-  color: #000;
-}
-
-.select-react-btn {
-  border: 2px solid #f3eb3e;
-  background-color: transparent;
-}
-.select-react-btn:hover,
-.select-react-btn.active,
-.select-react-modal {
-  background-color: #f3eb3e;
-  color: #000;
-}
+.selector-btn:hover,
+.selector-btn:active {
+  background-color: #00c0f3;
+  color: #000000;
+} 

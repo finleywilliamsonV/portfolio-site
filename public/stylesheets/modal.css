@@ -1,6 +1,6 @@
 .modal * {
   color: black;
-  /* border: red 1px solid; */
+  /* border: red 1px solid;  */
 }
 
 .modal-header {
@@ -11,6 +11,19 @@
   max-width: 90% !important;
 }
 
+#modal-button {
+  background-color: #00c0f3;
+  border: none;
+  padding: 8px 64px;
+  border-radius: 12px;
+}
+
+#modal-hr {
+  border: 1px solid #7f8080;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
 #info-col {
   padding-right: 0;
   padding-top: 0;
@@ -18,14 +31,14 @@
 
 .modal-display-btn {
   border: 0;
+  padding-left: 0px;
 }
 
 #modal-description {
-  font-size: 20px;
-  line-height: 18px;
-  letter-spacing: -2px;
+  font-size: 14px;
   margin-top: 20px;
   margin-bottom: 40px;
+  line-height: 18px;
 }
 
 .modal-body [class^='col'] {
@@ -52,8 +65,11 @@
   }
 
   #modal-title {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    /* margin-top: 20px; */
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    margin-bottom: 0px;
   }
 }
 
