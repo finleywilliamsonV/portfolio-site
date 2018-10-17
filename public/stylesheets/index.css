@@ -1,28 +1,26 @@
 
-#title-container {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
 .title-card {
   margin: 0 auto;
 }
 
+#title-text {
+  font-weight: 700;
+}
+
 #title-btn {
   background-color:transparent;
-  border-radius:14px;
-  font-size: 18px;
-	border:2px solid #f3eb3e;
+  border-radius: 12px;
+  font-size: 20px;
+	border:2px solid #00c0f3;
   cursor:pointer;
-  padding: 20px 36px;
+  padding: 15px 60px;
   margin-top: 40px;
-  letter-spacing: 2px;
   width: 100%;
 }
 
 #title-btn:hover {
-  background-color:#f3eb3e;
-  color: #1e2024;
+  background-color:#00c0f3;
+  color: #000000;
 }
 
 #title-container {
@@ -37,32 +35,29 @@
 /* MEDIA QUERIES */
 
 @media (min-width: 0) {
-  #title-text * {
-    font-size: 30px;
-    line-height: 36px;
+  
+  #title-container {
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+  }
+
+  #title-text {
+    font-size: 40px;
+    line-height: 46px;
   }
 
   .title-card {
     width: 270px;
   }
-
-  #back-slash {
-    font-size: 30px;
-  }
-
 }
 
 @media (min-width: 576px) {
-  #title-text * {
+  #title-text {
     font-size: 54px;
-    line-height: 44px;
+    line-height: 60px;
   }
   .title-card {
-    width: 500px;
-  }
-
-  #back-slash {
-    font-size: 38px;
+    width: 365px;
   }
 }
 
@@ -71,18 +66,13 @@
     margin-top: 175px;
   }
 
-  #title-text * {
+  #title-text {
     font-size: 65px;
-    line-height: 65px;
-    letter-spacing: -2px;
-  }
-
-  #back-slash {
-    font-size: 50px;
+    line-height: 70px;
   }
   
   .title-card {
-    width: 600px;
+    width: 440px;
   }
 
   #title-btn {
@@ -94,16 +84,13 @@
 }
 
 @media (min-width: 1200px) {
-  #title-text * {
+  #title-text {
     font-size: 75px;
-  }
-
-  #back-slash {
-    font-size: 55px;
+    line-height: 80px;
   }
   
   .title-card {
-    width: 650px;
+    width: 505px;
   }
 
   #title-btn {

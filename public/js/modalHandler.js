@@ -8,7 +8,7 @@ let modalImages;
 const projectData = {
   lorem: {
     title: 'Lorem Ipsum Generator',
-    tags: ['node', 'express', 'mongoDB'],
+    tags: ['Node', 'Express', 'MongoDB'],
     description: 'Generate Lorem Ipsum text in a variety of styles. This site uses Express for routing, MongoDB for data used in generation, pug for a views engine, and Bootstrap for styling.',
     images: ['../img/LoremIpsum3x2.png'],
     linkText: 'Live Site',
@@ -17,7 +17,7 @@ const projectData = {
   },
   todo: {
     title: 'ToDo List',
-    tags: ['node'],
+    tags: ['Node'],
     description: 'A simple to-do list. I use vanilla JS for routing and views handling, store & retrieve user list data in local storage, and use Bootstrap for styling.',
     images: ['../img/ToDoList3x2.png'],
     linkText: 'Live Site',
@@ -26,7 +26,7 @@ const projectData = {
   },
   kanban: {
     title: 'Kanban',
-    tags: ['node', 'react'],
+    tags: ['Node', 'React'],
     description: 'Organize your tasks with kanban.',
     images: ['../img/placeholder3x2.png'],
     linkText: 'Coming Soon',
@@ -35,7 +35,7 @@ const projectData = {
   },
   emoji: {
     title: 'Emojis in Space',
-    tags: ['as3'],
+    tags: ['AS3'],
     description: 'A retro-themed, top-down shooter pitting Clyde Panther against a raucous horde of emojis. My first commercial game! Download free on ios and Google Play.',
     images: ['../img/EmojisInSpace3x2.png', '../img/EmojisInSpace3x2.png'],
     linkText: 'Visit Site',
@@ -44,7 +44,7 @@ const projectData = {
   },
   dungeon: {
     title: 'Dungeon Masters (in progress)',
-    tags: ['as3'],
+    tags: ['AS3'],
     description: 'Build your own dungeon, fill it with monsters, and defend against endless waves of adventurers. Implements a D&D style combat system.',
     images: ['../img/DungeonMasters3x2.png'],
     linkText: 'Coming Soon',
@@ -158,6 +158,7 @@ $('.overlay').click((e)=> {
   // 8. fill modal with project data
   // 8.1 add title
   document.getElementById('modal-title').innerText = projectData[projectName].title;
+
   
   // 8.2 add tag buttons
   const modalTags = document.getElementById('modal-tags');
@@ -166,10 +167,10 @@ $('.overlay').click((e)=> {
   projectData[projectName].tags.forEach((tag) => {
     const button = document.createElement('button');
     button.className = `modal-display-btn select-${tag}-modal`;
-    if (tag === 'node') {
-      button.innerText = 'node.js';
-    } else if (tag === 'as3') {
-      button.innerText = 'actionscript 3';
+    if (tag === 'Node') {
+      button.innerText = 'Node.js';
+    } else if (tag === 'AS3') {
+      button.innerText = 'ActionScript 3';
     } else {
       button.innerText = tag;
     }
@@ -181,7 +182,7 @@ $('.overlay').click((e)=> {
 
   // 8.4 add button
   // 8.4.1 store button div and clear inner html
-  const buttonDiv = document.getElementById('modal-button');
+  const buttonDiv = document.getElementById('modal-button-div');
   buttonDiv.innerHTML = '';
   // 8.4.2 create link
   const link = document.createElement('a');
@@ -190,8 +191,9 @@ $('.overlay').click((e)=> {
   buttonDiv.appendChild(link);
   // 8.4.3 create link button
   const linkButton = document.createElement('button');
-  linkButton.className = 'btn btn-primary';
+  linkButton.className = 'btn btn-primary body-copy';
   linkButton.setAttribute('type', 'button');
+  linkButton.setAttribute('id', 'modal-button');
   linkButton.innerHTML = projectData[projectName].linkText;
   if (projectData[projectName].linkText === 'Coming Soon') {
     linkButton.setAttribute('disabled', true);

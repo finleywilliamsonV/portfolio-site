@@ -6,15 +6,15 @@ block content
 
     .row#projects-title-row
       .col#projects-title-col
-        h1#projects-title projects
+        h1#projects-title Projects
 
     .row.d-none.d-md-block#selector-row
       .col
-        button.selector-btn.select-node-btn#select-node node.js
-        button.selector-btn.select-express-btn#select-express express
-        button.selector-btn.select-mongoDB-btn#select-mongoDB mongoDB
-        button.selector-btn.select-react-btn#select-react react
-        button.selector-btn.select-as3-btn#select-as3 actionscript 3
+        button.selector-btn.select-node-btn.body-copy#select-node Node.js
+        button.selector-btn.select-express-btn.body-copy#select-express Express
+        button.selector-btn.select-mongoDB-btn.body-copy#select-mongoDB MongoDB
+        button.selector-btn.select-react-btn.body-copy#select-react React
+        button.selector-btn.select-as3-btn.body-copy#select-as3 ActionScript 3
 
     .row.mx-auto#projects-row
     
@@ -58,7 +58,6 @@ block content
         .modal-dialog.modal-dialog-centered(role='document')
           .modal-content
             .modal-header
-              //- h5#exampleModalLongTitle.modal-title Modal title
               button.close(type='button', data-dismiss='modal', aria-label='Close')
                 span(aria-hidden='true') X
             .modal-body
@@ -71,10 +70,11 @@ block content
                       //- add controls here
                   .col#info-col.align-self-end
                     h1#modal-title
+                    hr#modal-hr
                     #modal-tags
                       //- add tag buttons here
                     #modal-text
-                      p#modal-description this to do list is made in this and i made it because of this. so, here it is. look at it. click on the link. then look at that. then come back to this page, exit out of the project and look at another project. then, hire me ya ding.
+                      p.body-copy#modal-description this to do list is made in this and i made it because of this. so, here it is. look at it. click on the link. then look at that. then come back to this page, exit out of the project and look at another project. then, hire me ya ding.
                     //- .modal-footer
-                    #modal-button
+                    #modal-button-div
                       //- button.btn.btn-primary(type='button') EMPTY BUTTON

@@ -1,9 +1,14 @@
 * {
   color: #fff;
-  font-family: "orator-std";
+  font-family: "neue-haas-grotesk-display";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   /* border: 1px red solid; */
+}
+
+.body-copy {
+  font-family: "open-sans";
+  font-weight: 300;
 }
 
 .border {
@@ -13,63 +18,49 @@
 a, i {
   cursor: pointer;
   transition: .25s;
+  color: #7f8080;
 }
 
 
 /* COLORS */
 
-#name-btn:hover {
-  background-color: #4d84c4;
-  color: #000;
-}
-#name-link:hover {
-  color: #4d84c4
+#portfolio-btn,
+#about-me-btn {
+  color: #7f8080;
 }
 
-#portfolio-link:hover {
-  color: #f3eb3e;
-}
-
-#portfolio-btn:hover {
-  background-color: #f3eb3e;
-  color: #000;
-}
-
-#about-me-link:hover {
-  color: #e72e8f;
-}
-
-#about-me-btn:hover {
-  background-color: #e72e8f;
-  color: #000;
-}
-
+#name-link:hover,
+#portfolio-link:hover,
+#about-me-link:hover,
 #github-link:hover,
 #github-btn:hover,
 #email-link:hover,
 #email-btn:hover {
-  color: #5bb947;
+  color: #ffffff;
 }
 
+#name-btn:hover,
+#portfolio-btn:hover,
+#about-me-btn:hover {
+  background-color: #00c0f3;
+  color: #000;
+  border: #00c0f3;
+}
 
 body {
-  background-color: #1e2024;
-}
-
-.pink {
-  color: #e72e8f;
-}
-
-.green {
-  color: #5bb947;
-}
-
-.yellow {
-  color: #f3eb3e;
+  background-color: #000000;
 }
 
 .blue {
-  color: #4d84c4;
+  color: #00c0f3;
+}
+
+.light-grey {
+  color: #7f8080;
+}
+
+.grey {
+  color: #3c3f42;
 }
 
 /* NEGATING DEFAULT STYLES */
@@ -91,7 +82,7 @@ button.focus,button:active.focus,button.active.focus {
 #about-me-link,
 #name-btn {
   text-decoration: none;
-  color: white;
+  color: #7f8080;
 }
 
 .row {
@@ -104,8 +95,8 @@ button.focus,button:active.focus,button.active.focus {
 @media (min-width: 0) {
 
   #navbar-container {
-    padding-left: 40px;
-    padding-right: 40px;
+    /* padding-left: 40px; */
+    /* padding-right: 40px; */
   }
 
   #navbar * {
@@ -123,14 +114,14 @@ button.focus,button:active.focus,button.active.focus {
 
   [class ^= 'col'] button.btn,
   .navbar-link {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .navbar-btn {
     width: 100%;
     height: 40px;
     background-color: transparent;
-    border-radius:14px;
+    border-radius: 12px;
     max-width: 330px;
     padding: 0;
   }
@@ -140,11 +131,11 @@ button.focus,button:active.focus,button.active.focus {
   }
 
   #portfolio-btn {
-    border: 2px solid #f3eb3e;
+    border: 2px solid #7f8080;
   }
 
   #about-me-btn {
-    border: 2px solid #e72e8f;
+    border: 2px solid #7f8080;
   }
 
   i {
@@ -152,7 +143,7 @@ button.focus,button:active.focus,button.active.focus {
   }
 
   #navbar {
-    width: 80%;
+    width: 270px;
     margin: 0 auto;
   }
 
@@ -166,6 +157,10 @@ button.focus,button:active.focus,button.active.focus {
 @media (min-width: 576px) {
   body {
     /* background-color: darkred !important; */
+  }
+
+  #navbar {
+    width: 365px;
   }
 
   .navbar-btn {
