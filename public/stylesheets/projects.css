@@ -1,9 +1,5 @@
 /* PROJECTS PAGE */
 
-#projects-row {
-  /* margin-top: 10px; */
-}
-
 .card {
   background-color: transparent;
   border: none;
@@ -11,10 +7,6 @@
 
 img {
   border-radius: 12px;
-}
-
-.card-col {
-  /* max-width: 600px; */
 }
 
 /* MEDIA QUERIES */
@@ -99,7 +91,7 @@ img {
 }
 
 .selector-btn:hover,
-.selector-btn:active {
+.selector-btn.active {
   background-color: #00c0f3;
   color: #000000;
 } 
