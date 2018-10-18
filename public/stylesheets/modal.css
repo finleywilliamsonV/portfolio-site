@@ -53,6 +53,10 @@
   margin-bottom: 49px;
 }
 
+#modal-tags {
+  letter-spacing: 1px;
+}
+
 @media (min-width: 0) {
 
   .modal-body,

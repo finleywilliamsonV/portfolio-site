@@ -1,5 +1,5 @@
-// initialize modal?
-const modal = $('#project-modal').modal({show: false});
+// initialize modal
+$('#project-modal').modal({show: false});
 
 // var for referencing image arrays
 let modalImages;
@@ -9,7 +9,7 @@ const projectData = {
   lorem: {
     title: 'Lorem Ipsum Generator',
     tags: ['Node', 'Express', 'MongoDB'],
-    description: 'Generate Lorem Ipsum text in a variety of styles. This site uses Express for routing, MongoDB for data used in generation, pug for a views engine, and Bootstrap for styling.',
+    description: `Generate Lorem Ipsum text in a variety of styles. This site uses Express for routing, MongoDB for data used in generation, pug for a views engine, and Bootstrap for styling.`,
     images: ['../img/LoremIpsum3x2.png'],
     linkText: 'Live Site',
     link: '/lorem',
@@ -18,7 +18,7 @@ const projectData = {
   todo: {
     title: 'ToDo List',
     tags: ['Node'],
-    description: 'A simple to-do list. I use vanilla JS for routing and views handling, store & retrieve user list data in local storage, and use Bootstrap for styling.',
+    description: `A simple to-do list. I use vanilla JS for routing and views handling, store & retrieve user list data in local storage, and use Bootstrap for styling.`,
     images: ['../img/ToDoList3x2.png'],
     linkText: 'Live Site',
     link: '/todo',
@@ -36,7 +36,7 @@ const projectData = {
   emoji: {
     title: 'Emojis in Space',
     tags: ['AS3'],
-    description: 'A retro-themed, top-down shooter pitting Clyde Panther against a raucous horde of emojis. My first commercial game! Download free on ios and Google Play.',
+    description: `A retro-themed, top-down shooter pitting Clyde Panther against a raucous horde of emojis. My first commercial game! Download free on ios and Google Play.`,
     images: ['../img/EmojisInSpace3x2.png', '../img/EmojisInSpace3x2.png'],
     linkText: 'Visit Site',
     link: 'http://emojisin.space',
@@ -45,7 +45,7 @@ const projectData = {
   dungeon: {
     title: 'Dungeon Masters (in progress)',
     tags: ['AS3'],
-    description: 'Build your own dungeon, fill it with monsters, and defend against endless waves of adventurers. Implements a D&D style combat system.',
+    description: `Build your own dungeon, fill it with monsters, and defend against endless waves of adventurers. Implements a D&D style combat system.`,
     images: ['../img/DungeonMasters3x2.png'],
     linkText: 'Coming Soon',
     link: '',
@@ -157,28 +157,40 @@ $('.overlay').click((e)=> {
 
   // 8. fill modal with project data
   // 8.1 add title
-  document.getElementById('modal-title').innerText = projectData[projectName].title;
+  document.getElementById('modal-title').innerText
+    = projectData[projectName].title;
 
-  
-  // 8.2 add tag buttons
+  // 8.2 add tags
   const modalTags = document.getElementById('modal-tags');
-  modalTags.innerHTML = '';
+  modalTags.innerText = '';
 
-  projectData[projectName].tags.forEach((tag) => {
-    const button = document.createElement('button');
-    button.className = `modal-display-btn select-${tag}-modal`;
+  let tagText = '';
+  const currentTags = projectData[projectName].tags;
+  for (let i = 0; i < currentTags.length; i++) {
+    let tag = currentTags[i];
+
     if (tag === 'Node') {
-      button.innerText = 'Node.js';
+      tag = 'Node.js';
     } else if (tag === 'AS3') {
-      button.innerText = 'ActionScript 3';
-    } else {
-      button.innerText = tag;
+      tag = 'ActionScript 3';
     }
-    modalTags.appendChild(button);
-  });
-  
+
+    tagText += tag;
+
+    if (currentTags.length >= 2) {
+      if (i === currentTags.length - 2) {
+        tagText += ', & ';
+      } else if (i != currentTags.length - 1) {
+        tagText += ', ';
+      }
+    }
+  }
+
+  modalTags.innerText = tagText;
+
   // 8.3 add description
-  document.getElementById('modal-description').innerText = projectData[projectName].description;
+  document.getElementById('modal-description').innerText
+    = projectData[projectName].description;
 
   // 8.4 add button
   // 8.4.1 store button div and clear inner html

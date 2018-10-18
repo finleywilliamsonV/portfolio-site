@@ -1,6 +1,8 @@
 {
 	"extends": "google",
-	"rules": {},
+	"rules": {
+		"max-len": ["error", { "ignoreTemplateLiterals": true }]
+	},
 	"parserOptions": {
 		"ecmaVersion": 6
 	}

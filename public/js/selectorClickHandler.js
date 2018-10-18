@@ -21,17 +21,12 @@ const $selectors = document.querySelectorAll('.selector-btn');
 $selectors.forEach((selector) => {
   selector.addEventListener('click', (e) => {
     const target = e.target;
-    // console.log('selector target:', target);
-    // const tag = target.id.substring(7);
-    // console.log('selector tag:', tag);
 
     if (target.classList.contains('active')) {
       target.classList.remove('active');
     } else {
       target.classList.add('active');
     }
-
-    // console.log(target.style);
 
     updateProjectDisplay();
   });
@@ -41,8 +36,6 @@ $selectors.forEach((selector) => {
  * Update which projects are showing
  */
 function updateProjectDisplay() {
-  // console.log('\n\n ~ START UPDATE PROJECT DISPLAY ~ \n\n');
-
   // store selected buttons
   const $selectedButtons = document.querySelectorAll('.selector-btn.active');
 
