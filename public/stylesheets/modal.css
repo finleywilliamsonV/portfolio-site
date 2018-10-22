@@ -90,7 +90,7 @@
 
   #modal-title {
     margin-top: 20px;
-    font-size: 30px;
+    font-size: 27px;
     font-weight: 700;
     line-height: 45px;
     margin-bottom: 0px;
@@ -98,7 +98,6 @@
 
   #modal-github-button {
     background-color: transparent;
-    margin-left: 8px;
     border: none;
   }
 
