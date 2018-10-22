@@ -211,5 +211,58 @@ $('.overlay').click((e)=> {
     linkButton.setAttribute('disabled', true);
   }
   link.appendChild(linkButton);
+
+  // 8.5 add github link
+  // 8.5.1 create github link (mobile)
+  const githubLinkMobile = document.createElement('a');
+  githubLinkMobile.classList = 'd-md-none';
+  githubLinkMobile.setAttribute('href', getGithubLink(projectName));
+  const githubButtonMobile = document.createElement('button');
+  githubButtonMobile.classList = 'btn d-md-none';
+  githubButtonMobile.setAttribute('id', 'modal-github-button');
+  githubLinkMobile.appendChild(githubButtonMobile);
+  const githubIconMobile = document.createElement('i');
+  githubIconMobile.classList = 'fab fa-github';
+  githubIconMobile.setAttribute('id', 'modal-github-link-icon');
+  githubButtonMobile.appendChild(githubIconMobile);
+  buttonDiv.appendChild(githubLinkMobile);
+
+  // 8.5.2 create github link (desktop)
+  const githubLinkDesktop = document.createElement('a');
+  githubLinkDesktop.classList = 'd-none d-md-inline';
+  githubLinkDesktop.setAttribute('href', getGithubLink(projectName));
+  githubLinkDesktop.setAttribute('target', '_blank');
+  const githubIconDesktop = document.createElement('i');
+  githubIconDesktop.classList = 'fab fa-github';
+  githubIconDesktop.setAttribute('id', 'modal-github-link-icon');
+  const githubButtonDesktop = document.createElement('button');
+  githubButtonDesktop.classList = 'btn';
+  githubButtonDesktop.setAttribute('id', 'modal-github-button');
+  githubButtonDesktop.appendChild(githubIconDesktop);
+  githubLinkDesktop.appendChild(githubButtonDesktop);
+  buttonDiv.appendChild(githubLinkDesktop);
 });
 
+/**
+ * Return correct github link from name of project
+ * @param {string} projectName name of project as per projectData object
+ * @return {string} the github link to corresponding project
+ */
+function getGithubLink(projectName) {
+  console.log(projectName);
+  switch (projectName) {
+    case 'lorem':
+      return 'https://github.com/finleywilliamsonV/lorem-express';
+    case 'todo':
+      return 'https://github.com/finleywilliamsonV/To-Do-VanillaJS';
+    case 'weather':
+      return 'https://github.com/finleywilliamsonV/real-time-weather';
+    case 'emoji':
+      return 'https://github.com/finleywilliamsonV/EmojisInSpace';
+    case 'dungeon':
+      return 'https://github.com/finleywilliamsonV/DungeonMasters';
+    default:
+      return 'https://github.com/finleywilliamsonV/';
+  }
+  return '';
+}

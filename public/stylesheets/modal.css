@@ -95,6 +95,26 @@
     line-height: 45px;
     margin-bottom: 0px;
   }
+
+  #modal-github-button {
+    background-color: transparent;
+    margin-left: 8px;
+    border: none;
+  }
+
+  #modal-github-link-icon {
+    color: #2b2d31;
+    transition: .25s;
+    font-size: 34px;
+  }
+
+  #modal-github-link-icon:hover {
+    color: #00c0f3;
+  }
+
+  /* #github-icon-desktop {
+    height: 46px;
+  } */
 }
 
 @media (min-width: 576px) {
