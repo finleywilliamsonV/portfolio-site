@@ -43,7 +43,7 @@ const projectData = {
     githubLink: 'https://github.com/finleywilliamsonV/EmojisInSpace',
   },
   dungeon: {
-    title: 'Dungeon Masters (in progress)',
+    title: 'Dungeon Masters',
     tags: ['AS3'],
     description: `Build your own dungeon, fill it with monsters, and defend against endless waves of adventurers. Implements a D&D style combat system.`,
     images: ['../img/DungeonMasters3x2.png'],
