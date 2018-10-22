@@ -94,6 +94,10 @@ button.focus,button:active.focus,button.active.focus {
 
 @media (min-width: 0) {
 
+  #navbar-container {
+    margin-top: 10px;
+  }
+
   #navbar * {
     text-align: center;
   }
