@@ -126,7 +126,7 @@
 
 @media (min-width: 992px) {
 
-  .modal-body [class^='col'] {
+  #info-col {
     margin-left: 20px;
   }
 }
