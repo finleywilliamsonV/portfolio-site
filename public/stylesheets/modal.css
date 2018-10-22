@@ -5,10 +5,17 @@
 
 .modal-header {
   border: none;
+  padding-bottom: 20px;
 }
 
 .modal-dialog {
   max-width: 90% !important;
+}
+
+.vertical-center {
+
+  display: flex;
+  align-items: center;
 }
 
 #modal-button {
@@ -41,8 +48,20 @@
   line-height: 18px;
 }
 
-.modal-body [class^='col'] {
-  margin-left: 20px;
+.modal-dialog {
+  margin: 0 auto;
+}
+
+.modal-content {
+  padding: 0 20px;
+}
+
+.modal-header {
+  margin-top: 20px;
+}
+
+.modal-header .close {
+  padding: 0;
 }
 
 #spacer-col-modal {
@@ -50,7 +69,7 @@
 }
 
 .modal-body {
-  margin-bottom: 49px;
+  margin-bottom: 56px;
 }
 
 #modal-tags {
@@ -66,10 +85,11 @@
 
   #project-carousel {
     width: 300px;
+    margin: 0 auto;
   }
 
   #modal-title {
-    /* margin-top: 20px; */
+    margin-top: 20px;
     font-size: 30px;
     font-weight: 700;
     line-height: 45px;
@@ -85,12 +105,11 @@
 }
 
 
-@media (min-width: 768px) {
-  .modal-body,
-  #modal-body-container {
-    padding: 15px;
-  }
+@media (min-width: 992px) {
 
+  .modal-body [class^='col'] {
+    margin-left: 20px;
+  }
 }
 /*
 @media (min-width: 0) {
