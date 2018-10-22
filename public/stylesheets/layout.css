@@ -121,10 +121,6 @@ button.focus,button:active.focus,button.active.focus {
     padding: 0;
   }
 
-  #name-btn {
-    margin-top: 10px;
-  }
-
   #portfolio-btn {
     border: 2px solid #7f8080;
   }
@@ -159,6 +155,9 @@ button.focus,button:active.focus,button.active.focus {
     max-width: 500px;
   }
 
+  #name-btn {
+    margin-top: 10px;
+  }
 }
 
 @media (min-width: 768px) {

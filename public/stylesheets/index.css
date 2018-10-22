@@ -14,17 +14,12 @@
 	border:2px solid #00c0f3;
   cursor:pointer;
   padding: 15px 60px;
-  margin-top: 40px;
   width: 100%;
 }
 
 #title-btn:hover {
   background-color:#00c0f3;
   color: #000000;
-}
-
-#title-container {
-  margin-top: 35px;
 }
 
 #title-row {
@@ -39,10 +34,19 @@
   #title-text {
     font-size: 40px;
     line-height: 46px;
+    margin-bottom: 0px;
   }
 
   .title-card {
     width: 270px;
+  }
+
+  #title-container {
+    margin-top: 20px;
+  }
+
+  #title-btn {
+    margin-top: 20px;
   }
 }
 
@@ -54,7 +58,12 @@
   .title-card {
     width: 365px;
   }
+
+  #title-container {
+    margin-top: 35px;
+  }
 }
+
 
 @media (min-width: 768px) {
   #title-container {
