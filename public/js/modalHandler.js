@@ -8,8 +8,8 @@ let modalImages;
 const projectData = {
   lorem: {
     title: 'Lorem Ipsum Generator',
-    tags: ['Node', 'Express', 'MongoDB'],
-    description: `Generate Lorem Ipsum text in a variety of styles. This site uses Express for routing, MongoDB for data used in generation, pug for a views engine, and Bootstrap for styling.`,
+    tags: ['Node', 'Express', 'MongoDB', 'Pug'],
+    description: `Generate Lorem Ipsum text in a variety of styles. This site uses Express for routing, MongoDB for data used in generation, Pug for a views engine, and Bootstrap for styling.`,
     images: ['../img/LoremIpsum3x2.png'],
     linkText: 'Live Site',
     link: '/lorem',
@@ -24,14 +24,14 @@ const projectData = {
     link: '/todo',
     githubLink: 'https://github.com/finleywilliamsonV/To-Do-VanillaJS',
   },
-  kanban: {
-    title: 'Kanban',
-    tags: ['Node', 'React'],
-    description: 'Organize your tasks with kanban.',
+  weather: {
+    title: 'Real-Time Weather',
+    tags: ['Node', 'React', 'Parcel'],
+    description: 'Displays a 7-day weather forecast for any location. Uses OpenCage Geocoder and DarkSky Weather APIs. Application state managed with React, bundled with Parcel.',
     images: ['../img/placeholder3x2.png'],
-    linkText: 'Coming Soon',
-    link: '',
-    githubLink: 'https://github.com/verydanny/kanban',
+    linkText: 'Live Site',
+    link: '/weather/',
+    githubLink: 'https://github.com/finleywilliamsonV/real-time-weather',
   },
   emoji: {
     title: 'Emojis in Space',

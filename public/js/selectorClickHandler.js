@@ -1,12 +1,12 @@
 const tagData = {
   lorem: {
-    tags: ['node', 'express', 'mongoDB'],
+    tags: ['node', 'express', 'mongoDB', 'pug'],
   },
   todo: {
     tags: ['node'],
   },
-  kanban: {
-    tags: ['node', 'react'],
+  weather: {
+    tags: ['node', 'react', 'parcel'],
   },
   emoji: {
     tags: ['as3'],

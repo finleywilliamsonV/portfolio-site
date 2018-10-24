@@ -1,9 +1,21 @@
 {
 	"extends": "google",
 	"rules": {
-		"max-len": ["error", { "ignoreTemplateLiterals": true }]
+		"max-len": ["error", { "ignoreTemplateLiterals": true }],
+		"require-jsdoc": [
+			"error",
+			{
+				"require": {
+					"FunctionDeclaration": false,
+					"MethodDefinition": false,
+					"ClassDeclaration": false,
+					"ArrowFunctionExpression": false,
+					"FunctionExpression": false
+				}
+			}
+		]
 	},
 	"parserOptions": {
-		"ecmaVersion": 6
+		"ecmaVersion": 2017
 	}
 }
