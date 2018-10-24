@@ -28,7 +28,7 @@ const projectData = {
     title: 'Real-Time Weather',
     tags: ['Node', 'React', 'Parcel'],
     description: 'Displays a 7-day weather forecast for any location. Uses OpenCage Geocoder and DarkSky Weather APIs. Application state managed with React, bundled with Parcel.',
-    images: ['../img/placeholder3x2.png'],
+    images: ['../img/Weather3x2.png'],
     linkText: 'Live Site',
     link: '/weather/',
     githubLink: 'https://github.com/finleywilliamsonV/real-time-weather',
@@ -249,7 +249,6 @@ $('.overlay').click((e)=> {
  * @return {string} the github link to corresponding project
  */
 function getGithubLink(projectName) {
-  console.log(projectName);
   switch (projectName) {
     case 'lorem':
       return 'https://github.com/finleywilliamsonV/lorem-express';
