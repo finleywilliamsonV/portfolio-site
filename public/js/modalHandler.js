@@ -27,7 +27,7 @@ const projectData = {
   weather: {
     title: 'Real-Time Weather',
     tags: ['Node', 'React', 'Parcel'],
-    description: 'Displays a 7-day weather forecast for any location. Uses OpenCage Geocoder and DarkSky Weather APIs. Application state managed with React, bundled with Parcel.',
+    description: `Displays a 7-day weather forecast for any location. Uses OpenCage Geocoder and DarkSky Weather APIs. Application state managed with React, bundled with Parcel.`,
     images: ['../img/Weather3x2.png'],
     linkText: 'Live Site',
     link: '/weather/',
