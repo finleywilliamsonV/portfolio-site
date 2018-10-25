@@ -23,7 +23,7 @@ const API = {
   latLongApiUrl: 'https://api.opencagedata.com/geocode/v1/json',
   latLongApiKey: '501ef522ca0f4c06ae2b5410168d07eb',
   weatherApiUrl: 'https://api.darksky.net/forecast/27fa7afbec463b30b5c6c636974e6ba7/',
-}
+};
 
 // GET latLong api
 router.get('/api/lat-long/:address', getLatLong);
