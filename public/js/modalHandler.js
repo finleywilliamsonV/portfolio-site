@@ -36,8 +36,17 @@ const projectData = {
   emoji: {
     title: 'Emojis in Space',
     tags: ['AS3'],
-    description: `A retro-themed, top-down shooter pitting Clyde Panther against a raucous horde of emojis. My first commercial game! Download free on ios and Google Play.`,
-    images: ['../img/EmojisInSpace3x2.png', '../img/EmojisInSpace3x2.png'],
+    description: `A retro-themed, top-down shooter. Help Clyde Panther battle against a raucous horde of emojis and save the galaxy! My first commercial game. Download free on iOS and Google Play.`,
+    images: [
+      '../img/EmojisInSpace/eis1.png',
+      '../img/EmojisInSpace/eis2.png',
+      '../img/EmojisInSpace/eis3.png',
+      '../img/EmojisInSpace/eis4.png',
+      '../img/EmojisInSpace/eis5.png',
+      '../img/EmojisInSpace/eis6.png',
+      '../img/EmojisInSpace/eis7.png',
+      '../img/EmojisInSpace/eis8.png',
+    ],
     linkText: 'Visit Site',
     link: 'http://emojisin.space',
     githubLink: 'https://github.com/finleywilliamsonV/EmojisInSpace',
@@ -46,7 +55,13 @@ const projectData = {
     title: 'Dungeon Masters',
     tags: ['AS3'],
     description: `Build your own dungeon, fill it with monsters, and defend against endless waves of adventurers. Implements a D&D style combat system.`,
-    images: ['../img/DungeonMasters3x2.png'],
+    images: [
+      '../img/DungeonMasters/dm1.png',
+      '../img/DungeonMasters/dm2.png',
+      '../img/DungeonMasters/dm3.png',
+      '../img/DungeonMasters/dm4.png',
+      '../img/DungeonMasters/dm5.png',
+    ],
     linkText: 'Coming Soon',
     link: '',
     githubLink: 'https://github.com/finleywilliamsonV/DungeonMasters',
@@ -93,7 +108,7 @@ $('.overlay').click((e)=> {
     // 6.2 create carousel image
     const $carouselImage = document.createElement('img');
     $carouselImage.className += 'd-block w-100';
-    $carouselImage.setAttribute('alt', `image #${i+1}`);
+    $carouselImage.setAttribute('alt', `${projectName} image #${i+1}`);
     $carouselImage.setAttribute('src', modalImages[i]);
 
     // 6.3 add active to first item
