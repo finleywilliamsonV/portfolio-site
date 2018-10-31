@@ -28,7 +28,7 @@ const projectData = {
     title: 'Real-Time Weather',
     tags: ['Node', 'React', 'Parcel'],
     description: `Displays a 7-day weather forecast for any location. Uses OpenCage Geocoder and DarkSky Weather APIs. Application state managed with React, bundled with Parcel.`,
-    images: ['../img/Weather3x2.png'],
+    images: ['../img/Weather3x2-cropped.png'],
     linkText: 'Live Site',
     link: '/weather/',
     githubLink: 'https://github.com/finleywilliamsonV/real-time-weather',
