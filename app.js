@@ -17,7 +17,7 @@ app.set('view engine', 'pug');
 const routes = require('./routes/routes');
 app.use('/', routes);
 
-// listen on port 5000
-app.listen(5000, function() {
-  console.log('\n  *  *  *  Portfolio running on port 5000  *  *  *\n');
+// listen on port 4201
+app.listen(4201, function() {
+  console.log('\n  *  *  *  Portfolio running on port 4201  *  *  *\n');
 });
